@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import NavLinks from "./NavLinks";
+import SearchBox from "./SearchBox";
 
 export default function Header() {
   return (
@@ -10,8 +11,10 @@ export default function Header() {
         <Bars3Icon className="h-8 w-8 curosr-pointer" />
         <Link href="/" prefetch={false}>
           <h1 className="font-serif text-4xl text-center">
-            <span className="underline decoration-6 decoration-sky-400">Just</span>
-            {' '}News
+            <span className="underline decoration-6 decoration-sky-400">
+              Just
+            </span>
+            News
           </h1>
         </Link>
 
@@ -25,9 +28,10 @@ export default function Header() {
       </div>
 
       {/* NavLinks */}
-      <NavLinks/>
+      <NavLinks />
 
       {/* SearchBox */}
+      <SearchBox />
     </header>
   );
 }
